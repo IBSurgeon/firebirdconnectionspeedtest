@@ -33,14 +33,18 @@ In order to use Firebird connection speed, this test performs the specified numb
 Example of output for Firebird 5 and 4:
 
 ```
-C:\HQbird\Firebird50>isql -i D:\HQbirdDev\attach-detach-measuring-windows\attach-detach_FB4_FB5.sql
+C:\HQbird\Firebird40>isql -i C:\Temp\attach-detach_FB4_FB5.sql
 Use CONNECT or CREATE DATABASE to specify a database
+
 DB_CONN_STRING                  inet4://localhost:3054/C:/HQbird/Firebird40/examples/empbuild/EMPLOYEE.FDB
-ITER_CNT                        10
-TOTAL_TIME_FOR_ALL_ITER_MS      324
-AVG_CONN_ESTABLISH_TIME_MS      32
+ITER_CNT                        100
+TOTAL_TIME_FOR_ALL_ITER_MS      3843
+AVG_CONN_ESTABLISH_TIME_MS      38
 AUTH_SERVER                     Srp256
 ```
+
+
+
 
 You can see number of iterations in output variable `ITER_CNT`, total time and average connection/disconnection/query time.
 
